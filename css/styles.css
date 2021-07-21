@@ -1,0 +1,112 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-bg {
+    background: url('../Images/hero.jpg');
+    color: white;
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero-bg a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: lightgreen;    
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    clear: both;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+nav p{
+    font-size: 2rem;
+    font-family: 'Monoton', cursive;
+    float: left;
+    cursor: pointer;
+    animation: logo 5s infinite alternate;
+    color: lightgreen;
+}
+
+@keyframes logo {
+    from {
+        color: red;
+    }
+    to {
+        color: yellow;
+    }
+}
+
+.content p {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 14rem;
+    color: rgb(4, 136, 4);
+}
+
+.btn{
+    text-align: center;
+    background-color: rgb(56, 42, 90);
+    margin: 4rem 35rem 4rem 32rem;
+    border: .5rem solid whitesmoke;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 3rem;  
+    animation: move 1s infinite alternate;  
+}
+
+@keyframes move {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
